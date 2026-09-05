@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomCatFactsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12868cd773a956f27b17341a193b50bbdcdc6bcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomCatFactsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomCatFactsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
