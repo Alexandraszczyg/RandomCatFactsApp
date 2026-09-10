@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RandomCatFactsApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace RandomCatFactsApp.Services
 {
     public interface IApiService
     {
-        Task<string> GetRandomFactAsync();
+        Task<RandomFact> GetRandomFactAsync();
     }
 }
