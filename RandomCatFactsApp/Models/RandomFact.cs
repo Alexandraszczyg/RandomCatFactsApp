@@ -8,8 +8,8 @@ namespace RandomCatFactsApp.Models
 {
     public class RandomFact
     {
-        public required string Fact { get; set; }
-        public required int Length { get; set; }
+        public string Fact { get; set; }
+        public int Length { get; set; }
     }
 }
 
