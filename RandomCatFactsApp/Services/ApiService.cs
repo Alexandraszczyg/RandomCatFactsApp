@@ -36,13 +36,14 @@ namespace RandomCatFactsApp.Services
             {
                randomFact = JsonSerializer.Deserialize<RandomFact>(stringResponse);
             }
-            catch(JsonException)
+            catch(JsonException ex)
             {
-                throw;
+                throw new InvalidOperationException("Api returned invalid JSON.", ex);
             }
+
             if (randomFact==null)
             { 
-                throw new InvalidOperationException(); 
+                throw new InvalidOperationException("API returned an unexpected null value."); 
             }
            
 
