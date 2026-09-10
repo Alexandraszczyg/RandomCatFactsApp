@@ -28,13 +28,18 @@ namespace RandomCatFactsApp.Services
            var response = await _httpClient.GetAsync(_baseUrl);
            response.EnsureSuccessStatusCode();
 
-           var stringResponse= await response.Content.ReadAsStringAsync();
+           
+            var stringResponse= await response.Content.ReadAsStringAsync();
 
             RandomFact? randomFact;
 
             try
             {
-               randomFact = JsonSerializer.Deserialize<RandomFact>(stringResponse);
+               randomFact = JsonSerializer.Deserialize<RandomFact>(stringResponse, 
+                   new JsonSerializerOptions
+               {
+                   PropertyNameCaseInsensitive = true
+               });
             }
             catch(JsonException ex)
             {
